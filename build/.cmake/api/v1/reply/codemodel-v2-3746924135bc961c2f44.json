@@ -1,0 +1,131 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "src",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "MagicPlus",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "MagicPlus::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MagicPlus-Debug-8a58c669ab71f1fa8410.json",
+					"name" : "MagicPlus",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "admin::@145eef247bfb46b6828c",
+					"jsonFile" : "target-admin-Debug-ef3a746ad68188828e99.json",
+					"name" : "admin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "arithmetic::@145eef247bfb46b6828c",
+					"jsonFile" : "target-arithmetic-Debug-19451472b5b0dbd42ccd.json",
+					"name" : "arithmetic",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cmdanaly::@145eef247bfb46b6828c",
+					"jsonFile" : "target-cmdanaly-Debug-ded6e8f062d6c345129c.json",
+					"name" : "cmdanaly",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "database::@145eef247bfb46b6828c",
+					"jsonFile" : "target-database-Debug-6d0e02e74a0a46ad8b54.json",
+					"name" : "database",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "magicplus::@145eef247bfb46b6828c",
+					"jsonFile" : "target-magicplus-Debug-0401dc4ac78e16411192.json",
+					"name" : "magicplus",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "opstring::@145eef247bfb46b6828c",
+					"jsonFile" : "target-opstring-Debug-5c5d213ea27fee826cc1.json",
+					"name" : "opstring",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/fancy/文档/cpp_project/Magic+/build",
+		"source" : "/home/fancy/文档/cpp_project/Magic+"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

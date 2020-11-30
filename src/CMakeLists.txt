@@ -1,0 +1,10 @@
+set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/lib)
+include_directories(${CMAKE_SOURCE_DIR}/include)
+aux_source_directory(. DIR_LIB_SRCS)
+add_library(magicplus ${DIR_LIB_SRCS})
+
+add_library(database DataBase.cpp)
+add_library(opstring OpString.cpp)
+add_library(arithmetic Arithmetic.cpp)
+add_library(cmdanaly CmdAnaly.cpp)
+add_library(admin Admin.cpp)

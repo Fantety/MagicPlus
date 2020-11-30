@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/OpString.hpp
+vector
+-
+string
+-
+iostream
+-
+fstream
+-
+chrono
+-
+sstream
+-
+iomanip
+-
+
+/home/fancy/文档/cpp_project/Magic+/src/OpString.cpp
+OpString.hpp
+/home/fancy/文档/cpp_project/Magic+/src/OpString.hpp
+

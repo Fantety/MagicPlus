@@ -1,0 +1,1 @@
+/bin/g++-9  -g  -rdynamic CMakeFiles/MagicPlus.dir/main.cpp.o  -o MagicPlus  -lsqlite3 ../lib/libmagicplus.a -lsqlite3 
