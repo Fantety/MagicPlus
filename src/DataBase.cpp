@@ -4,7 +4,7 @@
  * @Author: Fantety
  * @Date: 2020-11-26 20:33:54
  * @LastEditors: sueRimn
- * @LastEditTime: 2020-11-29 15:39:30
+ * @LastEditTime: 2020-11-30 13:00:27
  */
 #include "DataBase.hpp"
 
@@ -14,7 +14,7 @@ DataBase::DataBase()
     int rc=sqlite3_open_v2(dataPath,&dataBase,SQLITE_OPEN_READWRITE | SQLITE_OPEN_CREATE | SQLITE_OPEN_NOMUTEX | SQLITE_OPEN_SHAREDCACHE, NULL);
     if(rc==SQLITE_OK)
     {
-        std::cout<<"[Prompt]:Open DataBase Successed!"<<std::endl;
+        //std::cout<<"[Prompt]:Open DataBase Successed!"<<std::endl;
     }
     else
     {
@@ -39,7 +39,7 @@ int DataBase::InsertData(std::string date,std::string formula,double result)
     int rc = sqlite3_prepare_v2(dataBase, sql.c_str(), -1, &stmt, NULL);
     if (rc == SQLITE_OK) 
     {
-        std::cout<< "添加数据语句OK\n";
+        //std::cout<< "添加数据语句OK\n";
         sqlite3_step(stmt);
     }
     else 
@@ -64,7 +64,7 @@ int DataBase::GetAllData()
     int result = sqlite3_prepare_v2(dataBase, sqlSentence, -1, &stmt, NULL);
     //std::cout<<"sdsdsdsdsdsd"<<std::endl;
     if (result == SQLITE_OK) {
-        std::clog <<  "查询语句OK\n";
+        //std::clog <<  "查询语句OK\n";
         // 每调一次sqlite3_step()函数，stmt语句句柄就会指向下一条记录
         while (sqlite3_step(stmt) == SQLITE_ROW) {
             rowTemp.push_back(std::to_string((sqlite3_column_int(stmt, 0))));
