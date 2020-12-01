@@ -4,7 +4,7 @@
  * @Author: Fantety
  * @Date: 2020-11-26 20:33:54
  * @LastEditors: sueRimn
- * @LastEditTime: 2020-11-30 13:00:27
+ * @LastEditTime: 2020-12-01 17:27:58
  */
 #include "DataBase.hpp"
 
@@ -20,6 +20,15 @@ DataBase::DataBase()
     {
         std::cout<<"[Prompt]:Open DataBase Failed!"<<std::endl;
     }
+    const char *sqlSentence = "create table if not exists formula(id integer PRIMARY KEY autoincrement,date TEXT,formula TEXT,result DOUBLE);";
+    sqlite3_stmt *stmt = nullptr;
+    int rcs = sqlite3_prepare_v2(dataBase, sqlSentence, -1, &stmt, NULL);
+    sqlite3_step(stmt);
+    sqlSentence="create table if not exists count(id integer PRIMARY KEY autoincrement,date TEXT,formula TEXT,result DOUBLE);";
+    stmt=nullptr;
+    rcs = sqlite3_prepare_v2(dataBase, sqlSentence, -1, &stmt, NULL);
+    sqlite3_step(stmt);
+
 }
 
 DataBase::~DataBase() 

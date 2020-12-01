@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../include/Admin.hpp
-Arithmetic.hpp
-../include/Arithmetic.hpp
-
 ../include/Arithmetic.hpp
 string
 -
@@ -66,19 +62,7 @@ sstream
 iomanip
 -
 
-/home/fancy/文档/cpp_project/Magic+/src/Admin.cpp
-Admin.hpp
-/home/fancy/文档/cpp_project/Magic+/src/Admin.hpp
-
 /home/fancy/文档/cpp_project/Magic+/src/Arithmetic.cpp
 Arithmetic.hpp
 /home/fancy/文档/cpp_project/Magic+/src/Arithmetic.hpp
-
-/home/fancy/文档/cpp_project/Magic+/src/DataBase.cpp
-DataBase.hpp
-/home/fancy/文档/cpp_project/Magic+/src/DataBase.hpp
-
-/home/fancy/文档/cpp_project/Magic+/src/OpString.cpp
-OpString.hpp
-/home/fancy/文档/cpp_project/Magic+/src/OpString.hpp
 

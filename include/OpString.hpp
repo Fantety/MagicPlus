@@ -4,7 +4,7 @@
  * @Author: Fantety
  * @Date: 2020-11-26 20:52:12
  * @LastEditors: sueRimn
- * @LastEditTime: 2020-11-30 12:10:38
+ * @LastEditTime: 2020-12-01 16:28:52
  */
 #ifndef OPSTRING_HPP 
 #define OPSTRING_HPP
@@ -19,7 +19,7 @@
 
 typedef struct variant
 {
-    int dataPos;
+    int dataPos=0;
     std::string str;
     size_t pos;
     size_t length;

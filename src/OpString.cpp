@@ -4,7 +4,7 @@
  * @Author: Fantety
  * @Date: 2020-11-26 20:52:23
  * @LastEditors: sueRimn
- * @LastEditTime: 2020-11-30 12:11:41
+ * @LastEditTime: 2020-12-01 16:37:02
  */
 #include "OpString.hpp"
 
@@ -50,9 +50,9 @@ std::string OpString::StringExtract(std::string inputStr)
     for(int i=0;i<variantT.size();i++)
     {
         tempPos=OpString::StringToDouble(variantT[i]);
-        std::cout<<tempPos<<std::endl;
+        //std::cout<<tempPos<<std::endl;
         variantT[i].insert(0,1,'i');
-        std::cout<<variantT[i]<<std::endl;
+        //std::cout<<variantT[i]<<std::endl;
         var.push_back({tempPos,variantT[i],inputStr.find(variantT[i]),variantT[i].size()});
     }
     return tempStr;
@@ -66,7 +66,7 @@ std::vector<std::string> OpString::StringSplit(std::string inputStr ,char splitM
     }
     std::vector<std::string> outputStr;
     std::string outputStrTemp;
-    if(inputStr.empty())
+    if(!inputStr.empty())
     {
         std::cout<<"[Warning]:There is on String to Split!"<<std::endl;
     }
