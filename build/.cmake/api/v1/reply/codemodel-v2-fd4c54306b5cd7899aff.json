@@ -37,7 +37,8 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7
 					]
 				}
 			],
@@ -59,7 +60,8 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7
 					]
 				}
 			],
@@ -102,8 +104,15 @@
 				},
 				{
 					"directoryIndex" : 1,
+					"id" : "loop::@145eef247bfb46b6828c",
+					"jsonFile" : "target-loop-Debug-e7de8aa541f567aefc24.json",
+					"name" : "loop",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
 					"id" : "magicplus::@145eef247bfb46b6828c",
-					"jsonFile" : "target-magicplus-Debug-0401dc4ac78e16411192.json",
+					"jsonFile" : "target-magicplus-Debug-cf3402acfea562031e39.json",
 					"name" : "magicplus",
 					"projectIndex" : 0
 				},

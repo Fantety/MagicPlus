@@ -21,6 +21,14 @@ src/CMakeFiles/magicplus.dir/DataBase.cpp.o
  ../include/DataBase.hpp
  ../include/OpString.hpp
  /home/fancy/文档/cpp_project/Magic+/src/DataBase.cpp
+src/CMakeFiles/magicplus.dir/Loop.cpp.o
+ ../include/Admin.hpp
+ ../include/Arithmetic.hpp
+ ../include/CmdAnaly.hpp
+ ../include/DataBase.hpp
+ ../include/Loop.hpp
+ ../include/OpString.hpp
+ /home/fancy/文档/cpp_project/Magic+/src/Loop.cpp
 src/CMakeFiles/magicplus.dir/OpString.cpp.o
  ../include/OpString.hpp
  /home/fancy/文档/cpp_project/Magic+/src/OpString.cpp

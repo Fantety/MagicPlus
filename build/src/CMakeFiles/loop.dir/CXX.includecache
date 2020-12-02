@@ -72,17 +72,9 @@ sstream
 iomanip
 -
 
-/home/fancy/文档/cpp_project/Magic+/main.cpp
-iostream
--
-DataBase.hpp
-/home/fancy/文档/cpp_project/Magic+/DataBase.hpp
-Admin.hpp
-/home/fancy/文档/cpp_project/Magic+/Admin.hpp
-OpString.hpp
-/home/fancy/文档/cpp_project/Magic+/OpString.hpp
-Arithmetic.hpp
-/home/fancy/文档/cpp_project/Magic+/Arithmetic.hpp
+/home/fancy/文档/cpp_project/Magic+/src/Loop.cpp
 Loop.hpp
-/home/fancy/文档/cpp_project/Magic+/Loop.hpp
+/home/fancy/文档/cpp_project/Magic+/src/Loop.hpp
+string.h
+-
 

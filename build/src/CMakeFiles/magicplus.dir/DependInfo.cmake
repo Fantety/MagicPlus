@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/fancy/文档/cpp_project/Magic+/src/Arithmetic.cpp" "/home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/magicplus.dir/Arithmetic.cpp.o"
   "/home/fancy/文档/cpp_project/Magic+/src/CmdAnaly.cpp" "/home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/magicplus.dir/CmdAnaly.cpp.o"
   "/home/fancy/文档/cpp_project/Magic+/src/DataBase.cpp" "/home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/magicplus.dir/DataBase.cpp.o"
+  "/home/fancy/文档/cpp_project/Magic+/src/Loop.cpp" "/home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/magicplus.dir/Loop.cpp.o"
   "/home/fancy/文档/cpp_project/Magic+/src/OpString.cpp" "/home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/magicplus.dir/OpString.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

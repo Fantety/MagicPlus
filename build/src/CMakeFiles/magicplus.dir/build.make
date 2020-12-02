@@ -109,9 +109,22 @@ src/CMakeFiles/magicplus.dir/DataBase.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/magicplus.dir/DataBase.cpp.s"
 	cd /home/fancy/文档/cpp_project/Magic+/build/src && /bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fancy/文档/cpp_project/Magic+/src/DataBase.cpp -o CMakeFiles/magicplus.dir/DataBase.cpp.s
 
+src/CMakeFiles/magicplus.dir/Loop.cpp.o: src/CMakeFiles/magicplus.dir/flags.make
+src/CMakeFiles/magicplus.dir/Loop.cpp.o: ../src/Loop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fancy/文档/cpp_project/Magic+/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/magicplus.dir/Loop.cpp.o"
+	cd /home/fancy/文档/cpp_project/Magic+/build/src && /bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/magicplus.dir/Loop.cpp.o -c /home/fancy/文档/cpp_project/Magic+/src/Loop.cpp
+
+src/CMakeFiles/magicplus.dir/Loop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/magicplus.dir/Loop.cpp.i"
+	cd /home/fancy/文档/cpp_project/Magic+/build/src && /bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fancy/文档/cpp_project/Magic+/src/Loop.cpp > CMakeFiles/magicplus.dir/Loop.cpp.i
+
+src/CMakeFiles/magicplus.dir/Loop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/magicplus.dir/Loop.cpp.s"
+	cd /home/fancy/文档/cpp_project/Magic+/build/src && /bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fancy/文档/cpp_project/Magic+/src/Loop.cpp -o CMakeFiles/magicplus.dir/Loop.cpp.s
+
 src/CMakeFiles/magicplus.dir/OpString.cpp.o: src/CMakeFiles/magicplus.dir/flags.make
 src/CMakeFiles/magicplus.dir/OpString.cpp.o: ../src/OpString.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fancy/文档/cpp_project/Magic+/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/magicplus.dir/OpString.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fancy/文档/cpp_project/Magic+/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/magicplus.dir/OpString.cpp.o"
 	cd /home/fancy/文档/cpp_project/Magic+/build/src && /bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/magicplus.dir/OpString.cpp.o -c /home/fancy/文档/cpp_project/Magic+/src/OpString.cpp
 
 src/CMakeFiles/magicplus.dir/OpString.cpp.i: cmake_force
@@ -128,6 +141,7 @@ magicplus_OBJECTS = \
 "CMakeFiles/magicplus.dir/Arithmetic.cpp.o" \
 "CMakeFiles/magicplus.dir/CmdAnaly.cpp.o" \
 "CMakeFiles/magicplus.dir/DataBase.cpp.o" \
+"CMakeFiles/magicplus.dir/Loop.cpp.o" \
 "CMakeFiles/magicplus.dir/OpString.cpp.o"
 
 # External object files for target magicplus
@@ -137,10 +151,11 @@ magicplus_EXTERNAL_OBJECTS =
 ../lib/libmagicplus.a: src/CMakeFiles/magicplus.dir/Arithmetic.cpp.o
 ../lib/libmagicplus.a: src/CMakeFiles/magicplus.dir/CmdAnaly.cpp.o
 ../lib/libmagicplus.a: src/CMakeFiles/magicplus.dir/DataBase.cpp.o
+../lib/libmagicplus.a: src/CMakeFiles/magicplus.dir/Loop.cpp.o
 ../lib/libmagicplus.a: src/CMakeFiles/magicplus.dir/OpString.cpp.o
 ../lib/libmagicplus.a: src/CMakeFiles/magicplus.dir/build.make
 ../lib/libmagicplus.a: src/CMakeFiles/magicplus.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fancy/文档/cpp_project/Magic+/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library ../../lib/libmagicplus.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fancy/文档/cpp_project/Magic+/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library ../../lib/libmagicplus.a"
 	cd /home/fancy/文档/cpp_project/Magic+/build/src && $(CMAKE_COMMAND) -P CMakeFiles/magicplus.dir/cmake_clean_target.cmake
 	cd /home/fancy/文档/cpp_project/Magic+/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/magicplus.dir/link.txt --verbose=$(VERBOSE)
 

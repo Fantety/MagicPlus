@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+src/CMakeFiles/loop.dir/rule:
+	cd /home/fancy/文档/cpp_project/Magic+/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/loop.dir/rule
+.PHONY : src/CMakeFiles/loop.dir/rule
+
+# Convenience name for target.
+loop: src/CMakeFiles/loop.dir/rule
+
+.PHONY : loop
+
+# fast build rule for target.
+loop/fast:
+	cd /home/fancy/文档/cpp_project/Magic+/build && $(MAKE) -f src/CMakeFiles/loop.dir/build.make src/CMakeFiles/loop.dir/build
+.PHONY : loop/fast
+
+# Convenience name for target.
 src/CMakeFiles/cmdanaly.dir/rule:
 	cd /home/fancy/文档/cpp_project/Magic+/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/cmdanaly.dir/rule
 .PHONY : src/CMakeFiles/cmdanaly.dir/rule
@@ -320,6 +335,36 @@ DataBase.cpp.s:
 	cd /home/fancy/文档/cpp_project/Magic+/build && $(MAKE) -f src/CMakeFiles/magicplus.dir/build.make src/CMakeFiles/magicplus.dir/DataBase.cpp.s
 .PHONY : DataBase.cpp.s
 
+Loop.o: Loop.cpp.o
+
+.PHONY : Loop.o
+
+# target to build an object file
+Loop.cpp.o:
+	cd /home/fancy/文档/cpp_project/Magic+/build && $(MAKE) -f src/CMakeFiles/loop.dir/build.make src/CMakeFiles/loop.dir/Loop.cpp.o
+	cd /home/fancy/文档/cpp_project/Magic+/build && $(MAKE) -f src/CMakeFiles/magicplus.dir/build.make src/CMakeFiles/magicplus.dir/Loop.cpp.o
+.PHONY : Loop.cpp.o
+
+Loop.i: Loop.cpp.i
+
+.PHONY : Loop.i
+
+# target to preprocess a source file
+Loop.cpp.i:
+	cd /home/fancy/文档/cpp_project/Magic+/build && $(MAKE) -f src/CMakeFiles/loop.dir/build.make src/CMakeFiles/loop.dir/Loop.cpp.i
+	cd /home/fancy/文档/cpp_project/Magic+/build && $(MAKE) -f src/CMakeFiles/magicplus.dir/build.make src/CMakeFiles/magicplus.dir/Loop.cpp.i
+.PHONY : Loop.cpp.i
+
+Loop.s: Loop.cpp.s
+
+.PHONY : Loop.s
+
+# target to generate assembly for a file
+Loop.cpp.s:
+	cd /home/fancy/文档/cpp_project/Magic+/build && $(MAKE) -f src/CMakeFiles/loop.dir/build.make src/CMakeFiles/loop.dir/Loop.cpp.s
+	cd /home/fancy/文档/cpp_project/Magic+/build && $(MAKE) -f src/CMakeFiles/magicplus.dir/build.make src/CMakeFiles/magicplus.dir/Loop.cpp.s
+.PHONY : Loop.cpp.s
+
 OpString.o: OpString.cpp.o
 
 .PHONY : OpString.o
@@ -358,6 +403,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... loop"
 	@echo "... cmdanaly"
 	@echo "... admin"
 	@echo "... arithmetic"
@@ -376,6 +422,9 @@ help:
 	@echo "... DataBase.o"
 	@echo "... DataBase.i"
 	@echo "... DataBase.s"
+	@echo "... Loop.o"
+	@echo "... Loop.i"
+	@echo "... Loop.s"
 	@echo "... OpString.o"
 	@echo "... OpString.i"
 	@echo "... OpString.s"

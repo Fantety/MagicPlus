@@ -124,6 +124,19 @@ MagicPlus/fast:
 .PHONY : MagicPlus/fast
 
 #=============================================================================
+# Target rules for targets named loop
+
+# Build rule for target.
+loop: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 loop
+.PHONY : loop
+
+# fast build rule for target.
+loop/fast:
+	$(MAKE) -f src/CMakeFiles/loop.dir/build.make src/CMakeFiles/loop.dir/build
+.PHONY : loop/fast
+
+#=============================================================================
 # Target rules for targets named cmdanaly
 
 # Build rule for target.
@@ -237,6 +250,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... MagicPlus"
+	@echo "... loop"
 	@echo "... cmdanaly"
 	@echo "... admin"
 	@echo "... arithmetic"

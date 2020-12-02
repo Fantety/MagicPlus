@@ -6,6 +6,11 @@
 },
 {
   "directory": "/home/fancy/文档/cpp_project/Magic+/build/src",
+  "command": "/bin/g++-9   -I/home/fancy/文档/cpp_project/Magic+/include  -g   -o CMakeFiles/loop.dir/Loop.cpp.o -c /home/fancy/文档/cpp_project/Magic+/src/Loop.cpp",
+  "file": "/home/fancy/文档/cpp_project/Magic+/src/Loop.cpp"
+},
+{
+  "directory": "/home/fancy/文档/cpp_project/Magic+/build/src",
   "command": "/bin/g++-9   -I/home/fancy/文档/cpp_project/Magic+/include  -g   -o CMakeFiles/cmdanaly.dir/CmdAnaly.cpp.o -c /home/fancy/文档/cpp_project/Magic+/src/CmdAnaly.cpp",
   "file": "/home/fancy/文档/cpp_project/Magic+/src/CmdAnaly.cpp"
 },
@@ -48,6 +53,11 @@
   "directory": "/home/fancy/文档/cpp_project/Magic+/build/src",
   "command": "/bin/g++-9   -I/home/fancy/文档/cpp_project/Magic+/include  -g   -o CMakeFiles/magicplus.dir/DataBase.cpp.o -c /home/fancy/文档/cpp_project/Magic+/src/DataBase.cpp",
   "file": "/home/fancy/文档/cpp_project/Magic+/src/DataBase.cpp"
+},
+{
+  "directory": "/home/fancy/文档/cpp_project/Magic+/build/src",
+  "command": "/bin/g++-9   -I/home/fancy/文档/cpp_project/Magic+/include  -g   -o CMakeFiles/magicplus.dir/Loop.cpp.o -c /home/fancy/文档/cpp_project/Magic+/src/Loop.cpp",
+  "file": "/home/fancy/文档/cpp_project/Magic+/src/Loop.cpp"
 },
 {
   "directory": "/home/fancy/文档/cpp_project/Magic+/build/src",

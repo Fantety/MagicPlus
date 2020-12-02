@@ -48,6 +48,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/MagicPlus.dir/DependInfo.cmake"
+  "src/CMakeFiles/loop.dir/DependInfo.cmake"
   "src/CMakeFiles/cmdanaly.dir/DependInfo.cmake"
   "src/CMakeFiles/admin.dir/DependInfo.cmake"
   "src/CMakeFiles/arithmetic.dir/DependInfo.cmake"

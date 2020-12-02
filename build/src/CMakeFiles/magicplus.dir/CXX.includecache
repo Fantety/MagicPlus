@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../include/Admin.hpp
+Arithmetic.hpp
+../include/Arithmetic.hpp
+
 ../include/Arithmetic.hpp
 string
 -
@@ -46,6 +50,12 @@ sqlite3.h
 OpString.hpp
 ../include/OpString.hpp
 
+../include/Loop.hpp
+iostream
+-
+Admin.hpp
+../include/Admin.hpp
+
 ../include/OpString.hpp
 vector
 -
@@ -65,4 +75,10 @@ iomanip
 /home/fancy/文档/cpp_project/Magic+/src/Arithmetic.cpp
 Arithmetic.hpp
 /home/fancy/文档/cpp_project/Magic+/src/Arithmetic.hpp
+
+/home/fancy/文档/cpp_project/Magic+/src/Loop.cpp
+Loop.hpp
+/home/fancy/文档/cpp_project/Magic+/src/Loop.hpp
+string.h
+-
 
