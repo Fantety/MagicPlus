@@ -4,7 +4,7 @@
  * @Author: Fantety
  * @Date: 2020-11-29 14:30:36
  * @LastEditors: Fantety
- * @LastEditTime: 2020-12-02 15:23:00
+ * @LastEditTime: 2020-12-02 15:30:55
  */
 #ifndef ADMIN_HPP 
 #define ADMIN_HPP
@@ -29,6 +29,8 @@ public:
     std::string GetCurrentStatus();
     //Admin();
     void go(char* cmd);
+
+    static void version();
     ~Admin();
 };
 
