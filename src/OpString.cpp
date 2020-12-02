@@ -4,7 +4,7 @@
  * @Author: Fantety
  * @Date: 2020-11-26 20:52:23
  * @LastEditors: Fantety
- * @LastEditTime: 2020-12-02 15:22:30
+ * @LastEditTime: 2020-12-02 15:27:20
  */
 #include "OpString.hpp"
 
@@ -66,7 +66,7 @@ std::vector<std::string> OpString::StringSplit(std::string inputStr ,char splitM
     }
     std::vector<std::string> outputStr;
     std::string outputStrTemp;
-    if(!inputStr.empty())
+    if(inputStr.empty())
     {
         std::cout<<"[Warning]:There is on String to Split!"<<std::endl;
     }
