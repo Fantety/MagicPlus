@@ -1,10 +1,10 @@
 /*
  * @Descripttion: 
  * @version: 
- * @Author: Fantety
+ * @Author: Fantety 
  * @Date: 2020-11-27 23:18:32
- * @LastEditors: sueRimn
- * @LastEditTime: 2020-11-29 14:43:41
+ * @LastEditors: Fantety
+ * @LastEditTime: 2020-12-02 15:23:09
  */
 #ifndef ARITHMETIC_CPP 
 #define ARITHMETIC_CPP

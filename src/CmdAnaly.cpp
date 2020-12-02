@@ -3,79 +3,59 @@
  * @version: 
  * @Author: Fantety
  * @Date: 2020-11-28 21:54:00
- * @LastEditors: sueRimn
- * @LastEditTime: 2020-12-01 16:41:53
+ * @LastEditors: Fantety
+ * @LastEditTime: 2020-12-02 15:22:41
  */
 #include "CmdAnaly.hpp"
 
 
-CmdAnaly::CmdAnaly(char** Cmd) 
+CmdAnaly::CmdAnaly(char* Cmd) 
 {
     GetCmdModifier(Cmd);
 }
 
-void CmdAnaly::GetCmdModifier(char** Cmd) 
+void CmdAnaly::GetCmdModifier(char* Cmd) 
 {
-    int counter=0;
-    //while(*Cmd)
-    //{
-    while(*Cmd)
+    if(*Cmd=='-')
     {
-        if(**Cmd=='-')
-        {
-            cmdModifier.push_back(*Cmd);
-            //std::cout<<cmdModifier[0]<<std::endl;
-        }
-        else
-        {
-            /* code */
-            if(counter>=1)
-            {
-                cmd=*Cmd;
-                //std::cout<<cmd<<std::endl;
-            }
-            counter++;
-        }
-        Cmd++;
-        //std::cout<<"sdsdsdsdsdsdsds"<<std::endl;
+        //std::cout<<Cmd<<std::endl;
+        cmdModifier=Cmd;
+        s=true;
     }
-    //std::cout<<"sdsdsdsdsdsdsds"<<std::endl;
-    //(*Cmd)++;
-    //}
-    //std::cout<<cmdModifier[1]<<std::endl;
+    else
+    {
+        //std::cout<<Cmd<<std::endl;
+        cmd=Cmd;
+        s=false;
+    }
+    
 }
 
 bool CmdAnaly::CheckCmd(std::string cmd) 
 {
-    for(int i=0;i<cmdModifier.size();i++)
+    if(cmdModifier.find(cmd)!=std::string::npos)
     {
-        if(cmd==cmdModifier[i])
-        {
-            return true;
-        }
-        else
-        {
-            continue;
-        }
+        //std::cout<<cmdModifier.find(cmd)<<std::endl;
+        return true;
     }
-    return false;
-}
+    else
+    {
+        /* code */     
+        return false;
+    }
+
+} 
 
 bool CmdAnaly::CheckCmd(char cmd) 
 {
-    for(int i=0;i<cmdModifier.size();i++)
+    if(cmdModifier.find(cmd)!=std::string::npos)
     {
-        for(int j=0;j<cmdModifier[i].size();j++)
-        {
-            if(cmd==cmdModifier[i][j])
-            {
-                return true;
-            }
-            else
-            {
-                continue;
-            }
-        }
+        //std::cout<<cmdModifier.find(cmd)<<std::endl;
+        return true;
     }
-    return false;
+    else
+    {
+        /* code */     
+        return false;
+    }
 }

@@ -2,9 +2,9 @@
  * @Descripttion: 
  * @version: 
  * @Author: Fantety
- * @Date: 2020-11-27 23:18:13
+ * @Date: 2020-11-27 23:18:13 
  * @LastEditors: sueRimn
- * @LastEditTime: 2020-12-01 17:29:05
+ * @LastEditTime: 2020-12-02 15:18:27
  */
 #include "Arithmetic.hpp"
 using namespace std;
@@ -201,13 +201,14 @@ void Arithmetic::out()
 {
 	if(str.empty()) {std::cout<<"[Error]:Have something worry!"<<std::endl;exit(-1);}
 	preDeal();
+	//std::cout<<"sdsdsdsdsdsd"<<std::endl;
 	result=postfixExpression(InfixToPostfi(this->str));
 	std::cout<<"[Result]:"<<result<<std::endl;
 }
 
 void Arithmetic::outS() 
 {
-	if(!str.empty()) std::cout<<"[Error]:Have something worry!";
+	if(str.empty()) std::cout<<"[Error]:Have something worry!";
 	preDeal();
 	result=postfixExpression(InfixToPostfi(this->str));
 	std::cout<<"[Result]:"<<result<<std::endl;
@@ -221,8 +222,9 @@ void Arithmetic::preDeal()
 		str.insert(0,"0");
 	}
 	//std::cout<<str<<std::endl;
-	if(str.find('i'))
+	if(str.find('i')!=std::string::npos)
 	{
+		//std::cout<<"sdsdsdsds"<<std::endl;
 		OpString opStr;
 		opStr.StringExtract(str);
 		for(int i=0;i<opStr.var.size();i++)
@@ -236,10 +238,9 @@ void Arithmetic::preDeal()
 			{
 				tempS=to_string(db->GetAssignResult(opStr.var[i].dataPos));
 			}
-			
-			str.replace(opStr.var[i].pos,opStr.var[i].length,tempS);
+			//std::cout<<opStr.var[i].length<<std::endl;
+			str.replace(str.find(opStr.var[i].str),opStr.var[i].length,tempS);
 		}
-		//std::cout<<str<<std::endl;
 	}
 	//std::cout<<db->GetLastResult()<<std::endl;
 

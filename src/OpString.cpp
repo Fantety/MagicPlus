@@ -3,15 +3,15 @@
  * @version: 
  * @Author: Fantety
  * @Date: 2020-11-26 20:52:23
- * @LastEditors: sueRimn
- * @LastEditTime: 2020-12-01 16:37:02
+ * @LastEditors: Fantety
+ * @LastEditTime: 2020-12-02 15:22:30
  */
 #include "OpString.hpp"
 
 double OpString::StringToDouble(std::string inputStr) 
 {
     return atof(inputStr.c_str());
-}
+} 
 
 std::string OpString::DoubleToString(double inputDouble) 
 {

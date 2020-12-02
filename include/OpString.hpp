@@ -1,10 +1,10 @@
 /*
  * @Descripttion: 
  * @version: 
- * @Author: Fantety
+ * @Author: Fantety  
  * @Date: 2020-11-26 20:52:12
- * @LastEditors: sueRimn
- * @LastEditTime: 2020-12-01 16:28:52
+ * @LastEditors: Fantety
+ * @LastEditTime: 2020-12-02 15:23:36
  */
 #ifndef OPSTRING_HPP 
 #define OPSTRING_HPP

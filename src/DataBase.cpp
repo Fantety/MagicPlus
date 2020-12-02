@@ -3,8 +3,8 @@
  * @version: 
  * @Author: Fantety
  * @Date: 2020-11-26 20:33:54
- * @LastEditors: sueRimn
- * @LastEditTime: 2020-12-01 17:27:58
+ * @LastEditors: Fantety
+ * @LastEditTime: 2020-12-02 15:22:48
  */
 #include "DataBase.hpp"
 
@@ -116,7 +116,7 @@ void DataBase::ShowAllData()
             //std::cout.width(29);
             //std::cout.fill(' ');
         std::cout<<"\n";
-    }
+    } 
 }
 
 double DataBase::GetLastResult() 
