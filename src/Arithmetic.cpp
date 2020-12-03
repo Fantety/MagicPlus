@@ -4,7 +4,7 @@
  * @Author: Fantety
  * @Date: 2020-11-27 23:18:13 
  * @LastEditors: Fantety
- * @LastEditTime: 2020-12-03 10:47:50
+ * @LastEditTime: 2020-12-03 10:56:21
  */
 #include "Arithmetic.hpp"
 using namespace std;
@@ -42,7 +42,7 @@ double Arithmetic::postfixExpression(const string &str)
 				sum = firstnum - secondnum;
 				mystack.push(sum);
 			}
-			if(tempstr == "x")
+			if(tempstr == "*")
 			{
 				sum = firstnum * secondnum;
 				mystack.push(sum);
