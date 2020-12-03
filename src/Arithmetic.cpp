@@ -3,17 +3,17 @@
  * @version: 
  * @Author: Fantety
  * @Date: 2020-11-27 23:18:13 
- * @LastEditors: sueRimn
- * @LastEditTime: 2020-12-02 15:18:27
+ * @LastEditors: Fantety
+ * @LastEditTime: 2020-12-03 10:47:50
  */
 #include "Arithmetic.hpp"
 using namespace std;
 double Arithmetic::postfixExpression(const string &str)
 {
-    string s = ".0123456789+-x/";
+    string s = ".0123456789+-*/";
 	string empty = " ";
 	string numbers = ".0123456789";
-	string c = "+-x/";
+	string c = "+-*/";
 
 	stack<double> mystack;    //栈空间
 	double firstnum;
@@ -26,7 +26,7 @@ double Arithmetic::postfixExpression(const string &str)
 		string::size_type end = str.find_first_of(empty,i);   //查找第一个空格	
         string tempstr = str.substr(start, end-start); 
 		//判断元素
-		if(tempstr == "+" || tempstr == "-" || tempstr == "x" || tempstr == "/")
+		if(tempstr == "+" || tempstr == "-" || tempstr == "*" || tempstr == "/")
 		{
 			secondnum = mystack.top();    
 			mystack.pop();
@@ -75,7 +75,7 @@ int Arithmetic::priority(const string str)
     case '+':  
     case '-':  
         return 1;  
-    case 'x':  
+    case '*':  
     case '/':  
         return 2; 
 	case '(':
@@ -87,7 +87,7 @@ int Arithmetic::priority(const string str)
 
 string Arithmetic::InfixToPostfi(const string &str)
 {
-	string operatorstr = "x-/+()";      //用于string搜索
+	string operatorstr = "*-/+()";      //用于string搜索
 	string numbers = "0123456789.";
 
 	
@@ -100,7 +100,6 @@ string Arithmetic::InfixToPostfi(const string &str)
 			//如果从i开始搜索到了操作符
 			if(operatorindex == i)
 			{
-				
 				string tempstr = str.substr(operatorindex,1);
 				Inputvec.push_back(tempstr);
 				i = i+1;
@@ -202,7 +201,13 @@ void Arithmetic::out()
 	if(str.empty()) {std::cout<<"[Error]:Have something worry!"<<std::endl;exit(-1);}
 	preDeal();
 	//std::cout<<"sdsdsdsdsdsd"<<std::endl;
-	result=postfixExpression(InfixToPostfi(this->str));
+	try{
+		result=postfixExpression(InfixToPostfi(this->str));
+	}
+	catch(...){
+		std::cout<<"[Error]:Your formula is not right!"<<std::endl;
+		return ;
+	}
 	std::cout<<"[Result]:"<<result<<std::endl;
 }
 
@@ -210,7 +215,13 @@ void Arithmetic::outS()
 {
 	if(str.empty()) std::cout<<"[Error]:Have something worry!";
 	preDeal();
-	result=postfixExpression(InfixToPostfi(this->str));
+	try{
+		result=postfixExpression(InfixToPostfi(this->str));
+	}
+	catch(...){
+		std::cout<<"[Error]:Your formula is not right!"<<std::endl;
+		return ;
+	}
 	std::cout<<"[Result]:"<<result<<std::endl;
 	WriteDatabase();
 }

@@ -16,7 +16,7 @@ CmdAnaly::CmdAnaly(char* Cmd)
 
 void CmdAnaly::GetCmdModifier(char* Cmd) 
 {
-    if(*Cmd=='-')
+    if(*Cmd=='/')
     {
         //std::cout<<Cmd<<std::endl;
         cmdModifier=Cmd;

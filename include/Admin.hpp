@@ -4,7 +4,7 @@
  * @Author: Fantety
  * @Date: 2020-11-29 14:30:36
  * @LastEditors: Fantety
- * @LastEditTime: 2020-12-02 15:30:55
+ * @LastEditTime: 2020-12-03 10:43:27
  */
 #ifndef ADMIN_HPP 
 #define ADMIN_HPP
@@ -20,12 +20,16 @@ typedef struct statusS
 }statusS;
 class Admin
 {
-private:
+    private:
     /* data */
     enum status{PRIMARY=0,PRIMARY_SAVE,DATABASE};
     CmdAnaly* opCmd=nullptr;
     statusS currentStatus;
-public:
+    
+    private:
+    void ChangeModel();
+
+    public:
     std::string GetCurrentStatus();
     //Admin();
     void go(char* cmd);

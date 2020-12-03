@@ -4,7 +4,7 @@
  * @Author: Fantety
  * @Date: 2020-11-26 20:33:54
  * @LastEditors: Fantety
- * @LastEditTime: 2020-12-02 15:22:48
+ * @LastEditTime: 2020-12-02 20:14:07
  */
 #include "DataBase.hpp"
 
@@ -20,23 +20,14 @@ DataBase::DataBase()
     {
         std::cout<<"[Prompt]:Open DataBase Failed!"<<std::endl;
     }
-    const char *sqlSentence = "create table if not exists formula(id integer PRIMARY KEY autoincrement,date TEXT,formula TEXT,result DOUBLE);";
-    sqlite3_stmt *stmt = nullptr;
-    int rcs = sqlite3_prepare_v2(dataBase, sqlSentence, -1, &stmt, NULL);
-    sqlite3_step(stmt);
-    sqlSentence="create table if not exists count(id integer PRIMARY KEY autoincrement,date TEXT,formula TEXT,result DOUBLE);";
-    stmt=nullptr;
-    rcs = sqlite3_prepare_v2(dataBase, sqlSentence, -1, &stmt, NULL);
-    sqlite3_step(stmt);
-
+    CreateCount();
+    CreateFormula();
 }
 
 DataBase::~DataBase() 
 {
-    if (dataBase) {
-        sqlite3_close_v2(dataBase);
-        dataBase = nullptr;
-    }
+    sqlite3_close_v2(dataBase);
+    dataBase = nullptr;
 }
 
 int DataBase::InsertData(std::string date,std::string formula,double result) 
@@ -48,16 +39,15 @@ int DataBase::InsertData(std::string date,std::string formula,double result)
     int rc = sqlite3_prepare_v2(dataBase, sql.c_str(), -1, &stmt, NULL);
     if (rc == SQLITE_OK) 
     {
-        //std::cout<< "添加数据语句OK\n";
         sqlite3_step(stmt);
+        sqlite3_finalize(stmt);
+        return 0;
     }
     else 
     {
         std::cout<< "添加数据语句有问题\n";
         return -1;
     }
-    sqlite3_finalize(stmt);
-    return 0;
 }
 
 int DataBase::GetAllData() 
@@ -84,13 +74,13 @@ int DataBase::GetAllData()
             formulaData.push_back(rowTemp);
             rowTemp.clear();
         }
+        sqlite3_finalize(stmt);
     }
     else {
         std::clog << "查询语句有问题";
         return -1;
     }
      //清理语句句柄，准备执行下一个语句
-    sqlite3_finalize(stmt);
     return 0;
 }
 
@@ -119,6 +109,22 @@ void DataBase::ShowAllData()
     } 
 }
 
+void DataBase::DeleteAll() 
+{
+    const char *sqlSentence = "delete from formula;";
+    sqlite3_stmt *stmt = nullptr;
+    int rc = sqlite3_prepare_v2(dataBase, sqlSentence, -1, &stmt, NULL);
+    if (rc == SQLITE_OK) {
+        sqlite3_step(stmt);
+        std::cout<<"[Prompt]:Success delete all data in formula!"<<std::endl;
+    }
+    else{
+        std::cout<<"[Error]:Delete failed!"<<std::endl;
+    }
+    sqlite3_finalize(stmt);
+    ReTable();
+}
+
 double DataBase::GetLastResult() 
 {
     const char *sqlSentence = "select * from formula order by id desc limit 1;";
@@ -128,6 +134,7 @@ double DataBase::GetLastResult()
     sqlite3_step(stmt);
     if (rc == SQLITE_OK) {
         result=sqlite3_column_double(stmt,3);
+        sqlite3_finalize(stmt);
         return result;
     }
     else{
@@ -145,6 +152,7 @@ double DataBase::GetAssignResult(int i)
     sqlite3_step(stmt);
     if (rc == SQLITE_OK) {
         result=sqlite3_column_double(stmt,3);
+        sqlite3_finalize(stmt);
         return result;
     }
     else{
@@ -158,4 +166,55 @@ std::string DataBase::gettime()
 	ss << std::put_time(std::localtime(&t), "%Y年%m月%d日%H时%M分%S秒");
     std::string str_time = ss.str();
     return str_time;
+}
+
+void DataBase::ReTable() 
+{
+    const char *sqlSentence = "delete from sqlite_sequence where name='formula';";
+    sqlite3_stmt *stmt = nullptr;
+    int rc = sqlite3_prepare_v2(dataBase, sqlSentence, -1, &stmt, NULL);
+    if (rc == SQLITE_OK) {
+        sqlite3_step(stmt);
+        sqlite3_finalize(stmt);
+        //std::cout<<"[Prompt]:Success delete all data in formula!"<<std::endl;
+    }
+    else{
+        std::cout<<"[Error]:RE failed!"<<std::endl;
+    }
+}
+
+void DataBase::CreateFormula() 
+{
+    const char *sqlSentence = "create table if not exists formula(id integer PRIMARY KEY autoincrement,date TEXT,formula TEXT,result DOUBLE);";
+    sqlite3_stmt *stmt = nullptr;
+    int rcs = sqlite3_prepare_v2(dataBase, sqlSentence, -1, &stmt, NULL);
+    sqlite3_step(stmt);
+    sqlite3_finalize(stmt);
+}
+
+void DataBase::CreateCount() 
+{
+    const char* sqlSentence="create table if not exists count(id integer PRIMARY KEY autoincrement,date TEXT,formula TEXT,result DOUBLE);";
+    sqlite3_stmt *stmt=nullptr;
+    int rcs = sqlite3_prepare_v2(dataBase, sqlSentence, -1, &stmt, NULL);
+    sqlite3_step(stmt);
+    sqlite3_finalize(stmt);
+}
+
+DataBaseAdmin::DataBaseAdmin(std::string inputStr) 
+{
+    if(inputStr=="all")
+    {
+        DataBase db;
+        db.ShowAllData();
+    }
+    else if(inputStr=="dall")
+    {
+        DataBase db;
+        db.DeleteAll();
+    }
+    else
+    {
+        std::cout<<"[Worning]:No such commend!"<<std::endl;
+    }    
 }

@@ -28,10 +28,21 @@ class DataBase
     int InsertData(std::string date,std::string formula,double result);
     int GetAllData();
     void ShowAllData();
+    void DeleteAll();
     double GetLastResult();
     double GetAssignResult(int i);
     std::string gettime();
 
+    private:
+    void ReTable();
+    void CreateFormula();
+    void CreateCount();
+
+};
+class DataBaseAdmin
+{
+    public:
+    DataBaseAdmin(std::string inputStr);
 };
 
 #endif // DATABASE_HPP 
