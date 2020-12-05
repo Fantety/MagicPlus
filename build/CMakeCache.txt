@@ -233,6 +233,9 @@ cmdanaly_LIB_DEPENDS:STATIC=general;sqlite3;
 database_LIB_DEPENDS:STATIC=general;sqlite3;
 
 //Dependencies for the target
+formula_LIB_DEPENDS:STATIC=general;sqlite3;
+
+//Dependencies for the target
 loop_LIB_DEPENDS:STATIC=general;sqlite3;
 
 //Dependencies for the target

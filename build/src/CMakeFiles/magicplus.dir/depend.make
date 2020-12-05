@@ -5,12 +5,14 @@ src/CMakeFiles/magicplus.dir/Admin.cpp.o: ../include/Admin.hpp
 src/CMakeFiles/magicplus.dir/Admin.cpp.o: ../include/Arithmetic.hpp
 src/CMakeFiles/magicplus.dir/Admin.cpp.o: ../include/CmdAnaly.hpp
 src/CMakeFiles/magicplus.dir/Admin.cpp.o: ../include/DataBase.hpp
+src/CMakeFiles/magicplus.dir/Admin.cpp.o: ../include/Formula.hpp
 src/CMakeFiles/magicplus.dir/Admin.cpp.o: ../include/OpString.hpp
 src/CMakeFiles/magicplus.dir/Admin.cpp.o: ../src/Admin.cpp
 
 src/CMakeFiles/magicplus.dir/Arithmetic.cpp.o: ../include/Arithmetic.hpp
 src/CMakeFiles/magicplus.dir/Arithmetic.cpp.o: ../include/CmdAnaly.hpp
 src/CMakeFiles/magicplus.dir/Arithmetic.cpp.o: ../include/DataBase.hpp
+src/CMakeFiles/magicplus.dir/Arithmetic.cpp.o: ../include/Formula.hpp
 src/CMakeFiles/magicplus.dir/Arithmetic.cpp.o: ../include/OpString.hpp
 src/CMakeFiles/magicplus.dir/Arithmetic.cpp.o: ../src/Arithmetic.cpp
 
@@ -21,10 +23,15 @@ src/CMakeFiles/magicplus.dir/DataBase.cpp.o: ../include/DataBase.hpp
 src/CMakeFiles/magicplus.dir/DataBase.cpp.o: ../include/OpString.hpp
 src/CMakeFiles/magicplus.dir/DataBase.cpp.o: ../src/DataBase.cpp
 
+src/CMakeFiles/magicplus.dir/Formula.cpp.o: ../include/Formula.hpp
+src/CMakeFiles/magicplus.dir/Formula.cpp.o: ../include/OpString.hpp
+src/CMakeFiles/magicplus.dir/Formula.cpp.o: ../src/Formula.cpp
+
 src/CMakeFiles/magicplus.dir/Loop.cpp.o: ../include/Admin.hpp
 src/CMakeFiles/magicplus.dir/Loop.cpp.o: ../include/Arithmetic.hpp
 src/CMakeFiles/magicplus.dir/Loop.cpp.o: ../include/CmdAnaly.hpp
 src/CMakeFiles/magicplus.dir/Loop.cpp.o: ../include/DataBase.hpp
+src/CMakeFiles/magicplus.dir/Loop.cpp.o: ../include/Formula.hpp
 src/CMakeFiles/magicplus.dir/Loop.cpp.o: ../include/Loop.hpp
 src/CMakeFiles/magicplus.dir/Loop.cpp.o: ../include/OpString.hpp
 src/CMakeFiles/magicplus.dir/Loop.cpp.o: ../src/Loop.cpp

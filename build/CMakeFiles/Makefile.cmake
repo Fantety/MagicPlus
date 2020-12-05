@@ -50,6 +50,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/MagicPlus.dir/DependInfo.cmake"
   "src/CMakeFiles/loop.dir/DependInfo.cmake"
   "src/CMakeFiles/cmdanaly.dir/DependInfo.cmake"
+  "src/CMakeFiles/formula.dir/DependInfo.cmake"
   "src/CMakeFiles/admin.dir/DependInfo.cmake"
   "src/CMakeFiles/arithmetic.dir/DependInfo.cmake"
   "src/CMakeFiles/opstring.dir/DependInfo.cmake"

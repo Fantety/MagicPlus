@@ -5,6 +5,7 @@ src/CMakeFiles/admin.dir/Admin.cpp.o: ../include/Admin.hpp
 src/CMakeFiles/admin.dir/Admin.cpp.o: ../include/Arithmetic.hpp
 src/CMakeFiles/admin.dir/Admin.cpp.o: ../include/CmdAnaly.hpp
 src/CMakeFiles/admin.dir/Admin.cpp.o: ../include/DataBase.hpp
+src/CMakeFiles/admin.dir/Admin.cpp.o: ../include/Formula.hpp
 src/CMakeFiles/admin.dir/Admin.cpp.o: ../include/OpString.hpp
 src/CMakeFiles/admin.dir/Admin.cpp.o: ../src/Admin.cpp
 

@@ -1,52 +1,53 @@
-Date : 2020-12-03 10:48:19
+Date : 2020-12-05 22:27:08
 Directory : /home/fancy/文档/cpp_project/Magic+
-Total : 67 files,  5911 codes, 410 comments, 798 blanks, all 7119 lines
+Total : 73 files,  6179 codes, 441 comments, 834 blanks, all 7454 lines
 
 Languages
 +-------------+------------+------------+------------+------------+------------+
 | language    | files      | code       | comment    | blank      | total      |
 +-------------+------------+------------+------------+------------+------------+
-| JSON        |         13 |      2,407 |          0 |         11 |      2,418 |
-| C++         |         14 |      1,273 |        214 |        215 |      1,702 |
-| CMake       |         33 |        574 |          0 |        136 |        710 |
+| JSON        |         14 |      2,541 |          0 |         12 |      2,553 |
+| C++         |         16 |      1,336 |        235 |        226 |      1,797 |
+| CMake       |         36 |        607 |          0 |        143 |        750 |
 | C           |          1 |        507 |         50 |        115 |        672 |
 | Log         |          1 |        425 |          0 |         39 |        464 |
-| Makefile    |          2 |        377 |        146 |        199 |        722 |
-| CMake Cache |          1 |        321 |          0 |         74 |        395 |
+| Makefile    |          2 |        414 |        156 |        215 |        785 |
+| CMake Cache |          1 |        323 |          0 |         75 |        398 |
 | Markdown    |          1 |         17 |          0 |          9 |         26 |
-| Database    |          1 |         10 |          0 |          0 |         10 |
+| Database    |          1 |          9 |          0 |          0 |          9 |
 +-------------+------------+------------+------------+------------+------------+
 
 Directories
 +---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
 | path                                                                                                          | files      | code       | comment    | blank      | total      |
 +---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
-| .                                                                                                             |         67 |      5,911 |        410 |        798 |      7,119 |
-| build                                                                                                         |         52 |      5,107 |        248 |        687 |      6,042 |
-| build/.cmake                                                                                                  |         12 |      2,340 |          0 |         11 |      2,351 |
-| build/.cmake/api                                                                                              |         12 |      2,340 |          0 |         11 |      2,351 |
-| build/.cmake/api/v1                                                                                           |         12 |      2,340 |          0 |         11 |      2,351 |
+| .                                                                                                             |         73 |      6,179 |        441 |        834 |      7,454 |
+| build                                                                                                         |         56 |      5,313 |        258 |        712 |      6,283 |
+| build/.cmake                                                                                                  |         13 |      2,464 |          0 |         12 |      2,476 |
+| build/.cmake/api                                                                                              |         13 |      2,464 |          0 |         12 |      2,476 |
+| build/.cmake/api/v1                                                                                           |         13 |      2,464 |          0 |         12 |      2,476 |
 | build/.cmake/api/v1/query                                                                                     |          1 |          1 |          0 |          0 |          1 |
 | build/.cmake/api/v1/query/client-vscode                                                                       |          1 |          1 |          0 |          0 |          1 |
-| build/.cmake/api/v1/reply                                                                                     |         11 |      2,339 |          0 |         11 |      2,350 |
-| build/CMakeFiles                                                                                              |         12 |      1,691 |        102 |        332 |      2,125 |
+| build/.cmake/api/v1/reply                                                                                     |         12 |      2,463 |          0 |         12 |      2,475 |
+| build/CMakeFiles                                                                                              |         12 |      1,692 |        102 |        332 |      2,126 |
 | build/CMakeFiles/3.16.3                                                                                       |          5 |      1,143 |        102 |        270 |      1,515 |
 | build/CMakeFiles/3.16.3/CompilerIdC                                                                           |          1 |        507 |         50 |        115 |        672 |
 | build/CMakeFiles/3.16.3/CompilerIdCXX                                                                         |          1 |        496 |         52 |        113 |        661 |
 | build/CMakeFiles/Magic+.dir                                                                                   |          2 |         30 |          0 |          6 |         36 |
 | build/CMakeFiles/MagicPlus.dir                                                                                |          2 |         28 |          0 |          6 |         34 |
-| build/src                                                                                                     |         24 |        511 |         75 |        185 |        771 |
-| build/src/CMakeFiles                                                                                          |         22 |        232 |          0 |         54 |        286 |
+| build/src                                                                                                     |         27 |        573 |         81 |        205 |        859 |
+| build/src/CMakeFiles                                                                                          |         25 |        264 |          0 |         61 |        325 |
 | build/src/CMakeFiles/admin.dir                                                                                |          3 |         30 |          0 |          7 |         37 |
 | build/src/CMakeFiles/arithmetic.dir                                                                           |          3 |         30 |          0 |          7 |         37 |
 | build/src/CMakeFiles/cmdanaly.dir                                                                             |          3 |         30 |          0 |          7 |         37 |
 | build/src/CMakeFiles/database.dir                                                                             |          3 |         30 |          0 |          7 |         37 |
+| build/src/CMakeFiles/formula.dir                                                                              |          3 |         30 |          0 |          7 |         37 |
 | build/src/CMakeFiles/loop.dir                                                                                 |          3 |         30 |          0 |          7 |         37 |
-| build/src/CMakeFiles/magicplus.dir                                                                            |          3 |         40 |          0 |          7 |         47 |
+| build/src/CMakeFiles/magicplus.dir                                                                            |          3 |         42 |          0 |          7 |         49 |
 | build/src/CMakeFiles/opstring.dir                                                                             |          3 |         30 |          0 |          7 |         37 |
-| database                                                                                                      |          1 |         10 |          0 |          0 |         10 |
-| include                                                                                                       |          6 |        143 |         51 |         43 |        237 |
-| src                                                                                                           |          6 |        623 |         98 |         58 |        779 |
+| database                                                                                                      |          1 |          9 |          0 |          0 |          9 |
+| include                                                                                                       |          7 |        161 |         62 |         50 |        273 |
+| src                                                                                                           |          7 |        668 |        108 |         62 |        838 |
 +---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
 
 Files
@@ -55,18 +56,19 @@ Files
 +---------------------------------------------------------------------------------------------------------------+-------------+------------+------------+------------+------------+
 | /home/fancy/文档/cpp_project/Magic+/README.md                                                                   | Markdown    |         17 |          0 |          9 |         26 |
 | /home/fancy/文档/cpp_project/Magic+/build/.cmake/api/v1/query/client-vscode/query.json                          | JSON        |          1 |          0 |          0 |          1 |
-| /home/fancy/文档/cpp_project/Magic+/build/.cmake/api/v1/reply/cache-v2-503bd3b8ded7638ca561.json                | JSON        |      1,275 |          0 |          1 |      1,276 |
-| /home/fancy/文档/cpp_project/Magic+/build/.cmake/api/v1/reply/codemodel-v2-fd4c54306b5cd7899aff.json            | JSON        |        140 |          0 |          1 |        141 |
-| /home/fancy/文档/cpp_project/Magic+/build/.cmake/api/v1/reply/index-2020-12-03T02-42-13-0246.json               | JSON        |         87 |          0 |          1 |         88 |
+| /home/fancy/文档/cpp_project/Magic+/build/.cmake/api/v1/reply/cache-v2-2f91044e6a4e5d49d06d.json                | JSON        |      1,287 |          0 |          1 |      1,288 |
+| /home/fancy/文档/cpp_project/Magic+/build/.cmake/api/v1/reply/codemodel-v2-8b788fc647a575d1c964.json            | JSON        |        149 |          0 |          1 |        150 |
+| /home/fancy/文档/cpp_project/Magic+/build/.cmake/api/v1/reply/index-2020-12-05T13-59-55-0928.json               | JSON        |         87 |          0 |          1 |         88 |
 | /home/fancy/文档/cpp_project/Magic+/build/.cmake/api/v1/reply/target-MagicPlus-Debug-8a58c669ab71f1fa8410.json  | JSON        |        132 |          0 |          1 |        133 |
 | /home/fancy/文档/cpp_project/Magic+/build/.cmake/api/v1/reply/target-admin-Debug-ef3a746ad68188828e99.json      | JSON        |         95 |          0 |          1 |         96 |
 | /home/fancy/文档/cpp_project/Magic+/build/.cmake/api/v1/reply/target-arithmetic-Debug-19451472b5b0dbd42ccd.json | JSON        |         95 |          0 |          1 |         96 |
 | /home/fancy/文档/cpp_project/Magic+/build/.cmake/api/v1/reply/target-cmdanaly-Debug-ded6e8f062d6c345129c.json   | JSON        |         95 |          0 |          1 |         96 |
 | /home/fancy/文档/cpp_project/Magic+/build/.cmake/api/v1/reply/target-database-Debug-6d0e02e74a0a46ad8b54.json   | JSON        |         95 |          0 |          1 |         96 |
+| /home/fancy/文档/cpp_project/Magic+/build/.cmake/api/v1/reply/target-formula-Debug-15b51483f127dc4baebe.json    | JSON        |         95 |          0 |          1 |         96 |
 | /home/fancy/文档/cpp_project/Magic+/build/.cmake/api/v1/reply/target-loop-Debug-e7de8aa541f567aefc24.json       | JSON        |         95 |          0 |          1 |         96 |
-| /home/fancy/文档/cpp_project/Magic+/build/.cmake/api/v1/reply/target-magicplus-Debug-cf3402acfea562031e39.json  | JSON        |        135 |          0 |          1 |        136 |
+| /home/fancy/文档/cpp_project/Magic+/build/.cmake/api/v1/reply/target-magicplus-Debug-6c79e0ad23e9831bd65c.json  | JSON        |        143 |          0 |          1 |        144 |
 | /home/fancy/文档/cpp_project/Magic+/build/.cmake/api/v1/reply/target-opstring-Debug-5c5d213ea27fee826cc1.json   | JSON        |         95 |          0 |          1 |         96 |
-| /home/fancy/文档/cpp_project/Magic+/build/CMakeCache.txt                                                        | CMake Cache |        321 |          0 |         74 |        395 |
+| /home/fancy/文档/cpp_project/Magic+/build/CMakeCache.txt                                                        | CMake Cache |        323 |          0 |         75 |        398 |
 | /home/fancy/文档/cpp_project/Magic+/build/CMakeFiles/3.16.3/CMakeCCompiler.cmake                                | CMake       |         60 |          0 |         17 |         77 |
 | /home/fancy/文档/cpp_project/Magic+/build/CMakeFiles/3.16.3/CMakeCXXCompiler.cmake                              | CMake       |         70 |          0 |         19 |         89 |
 | /home/fancy/文档/cpp_project/Magic+/build/CMakeFiles/3.16.3/CMakeSystem.cmake                                   | CMake       |         10 |          0 |          6 |         16 |
@@ -78,10 +80,10 @@ Files
 | /home/fancy/文档/cpp_project/Magic+/build/CMakeFiles/Magic+.dir/cmake_clean.cmake                               | CMake       |          9 |          0 |          2 |         11 |
 | /home/fancy/文档/cpp_project/Magic+/build/CMakeFiles/MagicPlus.dir/DependInfo.cmake                             | CMake       |         19 |          0 |          4 |         23 |
 | /home/fancy/文档/cpp_project/Magic+/build/CMakeFiles/MagicPlus.dir/cmake_clean.cmake                            | CMake       |          9 |          0 |          2 |         11 |
-| /home/fancy/文档/cpp_project/Magic+/build/CMakeFiles/Makefile.cmake                                             | CMake       |         53 |          0 |          6 |         59 |
-| /home/fancy/文档/cpp_project/Magic+/build/Makefile                                                              | Makefile    |        131 |         71 |         75 |        277 |
+| /home/fancy/文档/cpp_project/Magic+/build/CMakeFiles/Makefile.cmake                                             | CMake       |         54 |          0 |          6 |         60 |
+| /home/fancy/文档/cpp_project/Magic+/build/Makefile                                                              | Makefile    |        138 |         75 |         78 |        291 |
 | /home/fancy/文档/cpp_project/Magic+/build/cmake_install.cmake                                                   | CMake       |         46 |          0 |         10 |         56 |
-| /home/fancy/文档/cpp_project/Magic+/build/compile_commands.json                                                 | JSON        |         67 |          0 |          0 |         67 |
+| /home/fancy/文档/cpp_project/Magic+/build/compile_commands.json                                                 | JSON        |         77 |          0 |          0 |         77 |
 | /home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/CMakeDirectoryInformation.cmake                        | CMake       |         12 |          0 |          5 |         17 |
 | /home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/admin.dir/DependInfo.cmake                             | CMake       |         18 |          0 |          4 |         22 |
 | /home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/admin.dir/cmake_clean.cmake                            | CMake       |          9 |          0 |          2 |         11 |
@@ -95,30 +97,35 @@ Files
 | /home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/database.dir/DependInfo.cmake                          | CMake       |         18 |          0 |          4 |         22 |
 | /home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/database.dir/cmake_clean.cmake                         | CMake       |          9 |          0 |          2 |         11 |
 | /home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/database.dir/cmake_clean_target.cmake                  | CMake       |          3 |          0 |          1 |          4 |
+| /home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/formula.dir/DependInfo.cmake                           | CMake       |         18 |          0 |          4 |         22 |
+| /home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/formula.dir/cmake_clean.cmake                          | CMake       |          9 |          0 |          2 |         11 |
+| /home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/formula.dir/cmake_clean_target.cmake                   | CMake       |          3 |          0 |          1 |          4 |
 | /home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/loop.dir/DependInfo.cmake                              | CMake       |         18 |          0 |          4 |         22 |
 | /home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/loop.dir/cmake_clean.cmake                             | CMake       |          9 |          0 |          2 |         11 |
 | /home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/loop.dir/cmake_clean_target.cmake                      | CMake       |          3 |          0 |          1 |          4 |
-| /home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/magicplus.dir/DependInfo.cmake                         | CMake       |         23 |          0 |          4 |         27 |
-| /home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/magicplus.dir/cmake_clean.cmake                        | CMake       |         14 |          0 |          2 |         16 |
+| /home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/magicplus.dir/DependInfo.cmake                         | CMake       |         24 |          0 |          4 |         28 |
+| /home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/magicplus.dir/cmake_clean.cmake                        | CMake       |         15 |          0 |          2 |         17 |
 | /home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/magicplus.dir/cmake_clean_target.cmake                 | CMake       |          3 |          0 |          1 |          4 |
 | /home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/opstring.dir/DependInfo.cmake                          | CMake       |         18 |          0 |          4 |         22 |
 | /home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/opstring.dir/cmake_clean.cmake                         | CMake       |          9 |          0 |          2 |         11 |
 | /home/fancy/文档/cpp_project/Magic+/build/src/CMakeFiles/opstring.dir/cmake_clean_target.cmake                  | CMake       |          3 |          0 |          1 |          4 |
-| /home/fancy/文档/cpp_project/Magic+/build/src/Makefile                                                          | Makefile    |        246 |         75 |        124 |        445 |
+| /home/fancy/文档/cpp_project/Magic+/build/src/Makefile                                                          | Makefile    |        276 |         81 |        137 |        494 |
 | /home/fancy/文档/cpp_project/Magic+/build/src/cmake_install.cmake                                               | CMake       |         33 |          0 |          7 |         40 |
-| /home/fancy/文档/cpp_project/Magic+/database/database.db                                                        | Database    |         10 |          0 |          0 |         10 |
+| /home/fancy/文档/cpp_project/Magic+/database/database.db                                                        | Database    |          9 |          0 |          0 |          9 |
 | /home/fancy/文档/cpp_project/Magic+/include/Admin.hpp                                                           | C++         |         23 |         10 |         11 |         44 |
-| /home/fancy/文档/cpp_project/Magic+/include/Arithmetic.hpp                                                      | C++         |         32 |          8 |          5 |         45 |
+| /home/fancy/文档/cpp_project/Magic+/include/Arithmetic.hpp                                                      | C++         |         33 |          8 |          5 |         46 |
 | /home/fancy/文档/cpp_project/Magic+/include/CmdAnaly.hpp                                                        | C++         |         21 |          9 |          8 |         38 |
 | /home/fancy/文档/cpp_project/Magic+/include/DataBase.hpp                                                        | C++         |         34 |          8 |         10 |         52 |
+| /home/fancy/文档/cpp_project/Magic+/include/Formula.hpp                                                         | C++         |         16 |         11 |          7 |         34 |
 | /home/fancy/文档/cpp_project/Magic+/include/Loop.hpp                                                            | C++         |          6 |          8 |          3 |         17 |
-| /home/fancy/文档/cpp_project/Magic+/include/OpString.hpp                                                        | C++         |         27 |          8 |          6 |         41 |
+| /home/fancy/文档/cpp_project/Magic+/include/OpString.hpp                                                        | C++         |         28 |          8 |          6 |         42 |
 | /home/fancy/文档/cpp_project/Magic+/main.cpp                                                                    | C++         |         11 |         13 |          1 |         25 |
 | /home/fancy/文档/cpp_project/Magic+/src/Admin.cpp                                                               | C++         |         80 |         19 |          4 |        103 |
-| /home/fancy/文档/cpp_project/Magic+/src/Arithmetic.cpp                                                          | C++         |        231 |         20 |         26 |        277 |
+| /home/fancy/文档/cpp_project/Magic+/src/Arithmetic.cpp                                                          | C++         |        255 |         22 |         26 |        303 |
 | /home/fancy/文档/cpp_project/Magic+/src/CmdAnaly.cpp                                                            | C++         |         40 |         14 |          8 |         62 |
 | /home/fancy/文档/cpp_project/Magic+/src/DataBase.cpp                                                            | C++         |        180 |         27 |         14 |        221 |
+| /home/fancy/文档/cpp_project/Magic+/src/Formula.cpp                                                             | C++         |         19 |          8 |          4 |         31 |
 | /home/fancy/文档/cpp_project/Magic+/src/Loop.cpp                                                                | C++         |         18 |          8 |          1 |         27 |
-| /home/fancy/文档/cpp_project/Magic+/src/OpString.cpp                                                            | C++         |         74 |         10 |          5 |         89 |
-| Total                                                                                                         |             |      5,911 |        410 |        798 |      7,119 |
+| /home/fancy/文档/cpp_project/Magic+/src/OpString.cpp                                                            | C++         |         76 |         10 |          5 |         91 |
+| Total                                                                                                         |             |      6,179 |        441 |        834 |      7,454 |
 +---------------------------------------------------------------------------------------------------------------+-------------+------------+------------+------------+------------+

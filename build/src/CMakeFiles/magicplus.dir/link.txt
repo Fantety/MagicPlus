@@ -1,2 +1,2 @@
-/bin/ar qc ../../lib/libmagicplus.a  CMakeFiles/magicplus.dir/Admin.cpp.o CMakeFiles/magicplus.dir/Arithmetic.cpp.o CMakeFiles/magicplus.dir/CmdAnaly.cpp.o CMakeFiles/magicplus.dir/DataBase.cpp.o CMakeFiles/magicplus.dir/Loop.cpp.o CMakeFiles/magicplus.dir/OpString.cpp.o
+/bin/ar qc ../../lib/libmagicplus.a  CMakeFiles/magicplus.dir/Admin.cpp.o CMakeFiles/magicplus.dir/Arithmetic.cpp.o CMakeFiles/magicplus.dir/CmdAnaly.cpp.o CMakeFiles/magicplus.dir/DataBase.cpp.o CMakeFiles/magicplus.dir/Formula.cpp.o CMakeFiles/magicplus.dir/Loop.cpp.o CMakeFiles/magicplus.dir/OpString.cpp.o
 /bin/ranlib ../../lib/libmagicplus.a

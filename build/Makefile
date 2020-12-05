@@ -150,6 +150,19 @@ cmdanaly/fast:
 .PHONY : cmdanaly/fast
 
 #=============================================================================
+# Target rules for targets named formula
+
+# Build rule for target.
+formula: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 formula
+.PHONY : formula
+
+# fast build rule for target.
+formula/fast:
+	$(MAKE) -f src/CMakeFiles/formula.dir/build.make src/CMakeFiles/formula.dir/build
+.PHONY : formula/fast
+
+#=============================================================================
 # Target rules for targets named admin
 
 # Build rule for target.
@@ -252,6 +265,7 @@ help:
 	@echo "... MagicPlus"
 	@echo "... loop"
 	@echo "... cmdanaly"
+	@echo "... formula"
 	@echo "... admin"
 	@echo "... arithmetic"
 	@echo "... opstring"

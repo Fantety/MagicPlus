@@ -141,6 +141,21 @@ cmdanaly/fast:
 .PHONY : cmdanaly/fast
 
 # Convenience name for target.
+src/CMakeFiles/formula.dir/rule:
+	cd /home/fancy/文档/cpp_project/Magic+/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/formula.dir/rule
+.PHONY : src/CMakeFiles/formula.dir/rule
+
+# Convenience name for target.
+formula: src/CMakeFiles/formula.dir/rule
+
+.PHONY : formula
+
+# fast build rule for target.
+formula/fast:
+	cd /home/fancy/文档/cpp_project/Magic+/build && $(MAKE) -f src/CMakeFiles/formula.dir/build.make src/CMakeFiles/formula.dir/build
+.PHONY : formula/fast
+
+# Convenience name for target.
 src/CMakeFiles/admin.dir/rule:
 	cd /home/fancy/文档/cpp_project/Magic+/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/admin.dir/rule
 .PHONY : src/CMakeFiles/admin.dir/rule
@@ -335,6 +350,36 @@ DataBase.cpp.s:
 	cd /home/fancy/文档/cpp_project/Magic+/build && $(MAKE) -f src/CMakeFiles/magicplus.dir/build.make src/CMakeFiles/magicplus.dir/DataBase.cpp.s
 .PHONY : DataBase.cpp.s
 
+Formula.o: Formula.cpp.o
+
+.PHONY : Formula.o
+
+# target to build an object file
+Formula.cpp.o:
+	cd /home/fancy/文档/cpp_project/Magic+/build && $(MAKE) -f src/CMakeFiles/formula.dir/build.make src/CMakeFiles/formula.dir/Formula.cpp.o
+	cd /home/fancy/文档/cpp_project/Magic+/build && $(MAKE) -f src/CMakeFiles/magicplus.dir/build.make src/CMakeFiles/magicplus.dir/Formula.cpp.o
+.PHONY : Formula.cpp.o
+
+Formula.i: Formula.cpp.i
+
+.PHONY : Formula.i
+
+# target to preprocess a source file
+Formula.cpp.i:
+	cd /home/fancy/文档/cpp_project/Magic+/build && $(MAKE) -f src/CMakeFiles/formula.dir/build.make src/CMakeFiles/formula.dir/Formula.cpp.i
+	cd /home/fancy/文档/cpp_project/Magic+/build && $(MAKE) -f src/CMakeFiles/magicplus.dir/build.make src/CMakeFiles/magicplus.dir/Formula.cpp.i
+.PHONY : Formula.cpp.i
+
+Formula.s: Formula.cpp.s
+
+.PHONY : Formula.s
+
+# target to generate assembly for a file
+Formula.cpp.s:
+	cd /home/fancy/文档/cpp_project/Magic+/build && $(MAKE) -f src/CMakeFiles/formula.dir/build.make src/CMakeFiles/formula.dir/Formula.cpp.s
+	cd /home/fancy/文档/cpp_project/Magic+/build && $(MAKE) -f src/CMakeFiles/magicplus.dir/build.make src/CMakeFiles/magicplus.dir/Formula.cpp.s
+.PHONY : Formula.cpp.s
+
 Loop.o: Loop.cpp.o
 
 .PHONY : Loop.o
@@ -405,6 +450,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... loop"
 	@echo "... cmdanaly"
+	@echo "... formula"
 	@echo "... admin"
 	@echo "... arithmetic"
 	@echo "... opstring"
@@ -422,6 +468,9 @@ help:
 	@echo "... DataBase.o"
 	@echo "... DataBase.i"
 	@echo "... DataBase.s"
+	@echo "... Formula.o"
+	@echo "... Formula.i"
+	@echo "... Formula.s"
 	@echo "... Loop.o"
 	@echo "... Loop.i"
 	@echo "... Loop.s"

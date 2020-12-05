@@ -6,12 +6,14 @@ src/CMakeFiles/magicplus.dir/Admin.cpp.o
  ../include/Arithmetic.hpp
  ../include/CmdAnaly.hpp
  ../include/DataBase.hpp
+ ../include/Formula.hpp
  ../include/OpString.hpp
  /home/fancy/文档/cpp_project/Magic+/src/Admin.cpp
 src/CMakeFiles/magicplus.dir/Arithmetic.cpp.o
  ../include/Arithmetic.hpp
  ../include/CmdAnaly.hpp
  ../include/DataBase.hpp
+ ../include/Formula.hpp
  ../include/OpString.hpp
  /home/fancy/文档/cpp_project/Magic+/src/Arithmetic.cpp
 src/CMakeFiles/magicplus.dir/CmdAnaly.cpp.o
@@ -21,11 +23,16 @@ src/CMakeFiles/magicplus.dir/DataBase.cpp.o
  ../include/DataBase.hpp
  ../include/OpString.hpp
  /home/fancy/文档/cpp_project/Magic+/src/DataBase.cpp
+src/CMakeFiles/magicplus.dir/Formula.cpp.o
+ ../include/Formula.hpp
+ ../include/OpString.hpp
+ /home/fancy/文档/cpp_project/Magic+/src/Formula.cpp
 src/CMakeFiles/magicplus.dir/Loop.cpp.o
  ../include/Admin.hpp
  ../include/Arithmetic.hpp
  ../include/CmdAnaly.hpp
  ../include/DataBase.hpp
+ ../include/Formula.hpp
  ../include/Loop.hpp
  ../include/OpString.hpp
  /home/fancy/文档/cpp_project/Magic+/src/Loop.cpp

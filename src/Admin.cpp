@@ -4,7 +4,7 @@
  * @Author: Fantety
  * @Date: 2020-11-29 14:30:28
  * @LastEditors: Fantety
- * @LastEditTime: 2020-12-03 10:44:09
+ * @LastEditTime: 2020-12-05 22:26:53
  */
 #include "Admin.hpp"
 
@@ -62,7 +62,7 @@ void Admin::version()
     std::cout<<"\033[1m\033[34m  / / | |/ / | |  / /=|  | |   |    |  _| |_  | |_____      |  |    \033[0m\n";
     std::cout<<"\033[1m\033[34m /_/  |___/  |_| /_/  |_ | |_____|__| |_____| |_______|     |__|    \033[0m\n";
     std::cout<<"\033[1m\033[32m********************************************************************\033[0m\n";
-    std::cout<<"Author:Fantety\tVersion:0.3.0\t\nE-mail:fantety@foxmail.com\tweb:https://fantety.top\n";
+    std::cout<<"Author:Fantety\tVersion:0.3.1\t\nE-mail:fantety@foxmail.com\tweb:https://fantety.top\n";
     std::cout<<"\033[1m\033[46m********************************************************************\033[0m\n";
 }
 Admin::~Admin()

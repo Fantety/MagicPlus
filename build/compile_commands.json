@@ -16,6 +16,11 @@
 },
 {
   "directory": "/home/fancy/文档/cpp_project/Magic+/build/src",
+  "command": "/bin/g++-9   -I/home/fancy/文档/cpp_project/Magic+/include  -g   -o CMakeFiles/formula.dir/Formula.cpp.o -c /home/fancy/文档/cpp_project/Magic+/src/Formula.cpp",
+  "file": "/home/fancy/文档/cpp_project/Magic+/src/Formula.cpp"
+},
+{
+  "directory": "/home/fancy/文档/cpp_project/Magic+/build/src",
   "command": "/bin/g++-9   -I/home/fancy/文档/cpp_project/Magic+/include  -g   -o CMakeFiles/admin.dir/Admin.cpp.o -c /home/fancy/文档/cpp_project/Magic+/src/Admin.cpp",
   "file": "/home/fancy/文档/cpp_project/Magic+/src/Admin.cpp"
 },
@@ -53,6 +58,11 @@
   "directory": "/home/fancy/文档/cpp_project/Magic+/build/src",
   "command": "/bin/g++-9   -I/home/fancy/文档/cpp_project/Magic+/include  -g   -o CMakeFiles/magicplus.dir/DataBase.cpp.o -c /home/fancy/文档/cpp_project/Magic+/src/DataBase.cpp",
   "file": "/home/fancy/文档/cpp_project/Magic+/src/DataBase.cpp"
+},
+{
+  "directory": "/home/fancy/文档/cpp_project/Magic+/build/src",
+  "command": "/bin/g++-9   -I/home/fancy/文档/cpp_project/Magic+/include  -g   -o CMakeFiles/magicplus.dir/Formula.cpp.o -c /home/fancy/文档/cpp_project/Magic+/src/Formula.cpp",
+  "file": "/home/fancy/文档/cpp_project/Magic+/src/Formula.cpp"
 },
 {
   "directory": "/home/fancy/文档/cpp_project/Magic+/build/src",

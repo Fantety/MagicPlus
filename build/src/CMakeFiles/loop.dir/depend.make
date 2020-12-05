@@ -5,6 +5,7 @@ src/CMakeFiles/loop.dir/Loop.cpp.o: ../include/Admin.hpp
 src/CMakeFiles/loop.dir/Loop.cpp.o: ../include/Arithmetic.hpp
 src/CMakeFiles/loop.dir/Loop.cpp.o: ../include/CmdAnaly.hpp
 src/CMakeFiles/loop.dir/Loop.cpp.o: ../include/DataBase.hpp
+src/CMakeFiles/loop.dir/Loop.cpp.o: ../include/Formula.hpp
 src/CMakeFiles/loop.dir/Loop.cpp.o: ../include/Loop.hpp
 src/CMakeFiles/loop.dir/Loop.cpp.o: ../include/OpString.hpp
 src/CMakeFiles/loop.dir/Loop.cpp.o: ../src/Loop.cpp

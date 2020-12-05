@@ -5,6 +5,7 @@ CMakeFiles/MagicPlus.dir/main.cpp.o: ../include/Admin.hpp
 CMakeFiles/MagicPlus.dir/main.cpp.o: ../include/Arithmetic.hpp
 CMakeFiles/MagicPlus.dir/main.cpp.o: ../include/CmdAnaly.hpp
 CMakeFiles/MagicPlus.dir/main.cpp.o: ../include/DataBase.hpp
+CMakeFiles/MagicPlus.dir/main.cpp.o: ../include/Formula.hpp
 CMakeFiles/MagicPlus.dir/main.cpp.o: ../include/Loop.hpp
 CMakeFiles/MagicPlus.dir/main.cpp.o: ../include/OpString.hpp
 CMakeFiles/MagicPlus.dir/main.cpp.o: ../main.cpp

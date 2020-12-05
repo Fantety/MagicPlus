@@ -23,6 +23,7 @@ typedef struct variant
     std::string str;
     size_t pos;
     size_t length;
+    double vaule;
 }variant;
 
 class OpString
@@ -33,7 +34,7 @@ class OpString
     static std::vector<std::string> StringSplit(std::string inputStr ,char splitMark);
     static double StringToDouble(std::string inputStr);
     static std::string DoubleToString(double inputDouble);
-    std::string StringExtract(std::string inputStr);
+    std::string StringExtract(std::string inputStr,char preStr);
 };
 
 #endif // OPSTRING_HPP 

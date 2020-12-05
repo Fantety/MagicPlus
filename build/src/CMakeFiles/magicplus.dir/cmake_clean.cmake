@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/magicplus.dir/Arithmetic.cpp.o"
   "CMakeFiles/magicplus.dir/CmdAnaly.cpp.o"
   "CMakeFiles/magicplus.dir/DataBase.cpp.o"
+  "CMakeFiles/magicplus.dir/Formula.cpp.o"
   "CMakeFiles/magicplus.dir/Loop.cpp.o"
   "CMakeFiles/magicplus.dir/OpString.cpp.o"
 )

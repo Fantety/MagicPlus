@@ -1230,6 +1230,18 @@
 			"value" : "general;sqlite3;"
 		},
 		{
+			"name" : "formula_LIB_DEPENDS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Dependencies for the target"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "general;sqlite3;"
+		},
+		{
 			"name" : "loop_LIB_DEPENDS",
 			"properties" : 
 			[

@@ -18,6 +18,7 @@
 #include <algorithm>
 #include "DataBase.hpp"
 #include "CmdAnaly.hpp"
+#include "Formula.hpp"
 
 class Arithmetic
 {

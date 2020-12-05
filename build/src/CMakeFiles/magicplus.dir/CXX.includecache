@@ -25,6 +25,8 @@ DataBase.hpp
 ../include/DataBase.hpp
 CmdAnaly.hpp
 ../include/CmdAnaly.hpp
+Formula.hpp
+../include/Formula.hpp
 
 ../include/CmdAnaly.hpp
 string
@@ -43,6 +45,14 @@ iostream
 -
 sqlite3.h
 ../include/sqlite3.h
+OpString.hpp
+../include/OpString.hpp
+
+../include/Formula.hpp
+math.h
+-
+string
+-
 OpString.hpp
 ../include/OpString.hpp
 

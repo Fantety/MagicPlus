@@ -4,7 +4,7 @@
  * @Author: Fantety
  * @Date: 2020-11-26 20:52:23
  * @LastEditors: Fantety
- * @LastEditTime: 2020-12-02 15:27:20
+ * @LastEditTime: 2020-12-05 22:17:00
  */
 #include "OpString.hpp"
 
@@ -18,18 +18,18 @@ std::string OpString::DoubleToString(double inputDouble)
     return std::to_string(inputDouble);
 }
 
-std::string OpString::StringExtract(std::string inputStr) 
+std::string OpString::StringExtract(std::string inputStr,char preStr) 
 {
     std::string tempStr;
     for(int i=0;i<inputStr.size();i++)
     {
-        if(inputStr[i]=='i')
+        if(inputStr[i]==preStr)
         {
             tempStr.push_back(inputStr[i]);
             i++;
             while(1)
             {
-                if(int(inputStr[i])>=48&&int(inputStr[i])<=57)
+                if((int(inputStr[i])>=48&&int(inputStr[i])<=57)||int(inputStr[i])==46)
                 {
                     tempStr.push_back(inputStr[i]);
                     i++;
@@ -45,15 +45,17 @@ std::string OpString::StringExtract(std::string inputStr)
             continue;
         }
     }
-    std::vector<std::string> variantT=OpString::StringSplit(tempStr,'i');
+    std::vector<std::string> variantT=OpString::StringSplit(tempStr,preStr);
     int tempPos=0;
+    double vaule=0.0;
     for(int i=0;i<variantT.size();i++)
     {
         tempPos=OpString::StringToDouble(variantT[i]);
+        vaule=OpString::StringToDouble(variantT[i]);
         //std::cout<<tempPos<<std::endl;
-        variantT[i].insert(0,1,'i');
+        variantT[i].insert(0,1,preStr);
         //std::cout<<variantT[i]<<std::endl;
-        var.push_back({tempPos,variantT[i],inputStr.find(variantT[i]),variantT[i].size()});
+        var.push_back({tempPos,variantT[i],inputStr.find(variantT[i]),variantT[i].size(),vaule});
     }
     return tempStr;
 }

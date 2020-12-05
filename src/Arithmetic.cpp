@@ -4,7 +4,7 @@
  * @Author: Fantety
  * @Date: 2020-11-27 23:18:13 
  * @LastEditors: Fantety
- * @LastEditTime: 2020-12-03 10:56:21
+ * @LastEditTime: 2020-12-05 22:24:48
  */
 #include "Arithmetic.hpp"
 using namespace std;
@@ -237,7 +237,7 @@ void Arithmetic::preDeal()
 	{
 		//std::cout<<"sdsdsdsds"<<std::endl;
 		OpString opStr;
-		opStr.StringExtract(str);
+		opStr.StringExtract(str,'i');
 		for(int i=0;i<opStr.var.size();i++)
 		{
 			std::string tempS;
@@ -249,6 +249,32 @@ void Arithmetic::preDeal()
 			{
 				tempS=to_string(db->GetAssignResult(opStr.var[i].dataPos));
 			}
+			//std::cout<<opStr.var[i].length<<std::endl;
+			str.replace(str.find(opStr.var[i].str),opStr.var[i].length,tempS);
+		}
+	}
+	if(str.find('s')!=std::string::npos)
+	{
+		OpString opStr;
+		Formula f;
+		opStr.StringExtract(str,'s');
+		for(int i=0;i<opStr.var.size();i++)
+		{
+			std::string tempS;
+			tempS=f.GetCircleArea(opStr.var[i].vaule);
+			//std::cout<<opStr.var[i].length<<std::endl;
+			str.replace(str.find(opStr.var[i].str),opStr.var[i].length,tempS);
+		}
+	}
+	if(str.find('c')!=std::string::npos)
+	{
+		OpString opStr;
+		Formula f;
+		opStr.StringExtract(str,'c');
+		for(int i=0;i<opStr.var.size();i++)
+		{
+			std::string tempS;
+			tempS=f.GetCircleCircumference(opStr.var[i].vaule);
 			//std::cout<<opStr.var[i].length<<std::endl;
 			str.replace(str.find(opStr.var[i].str),opStr.var[i].length,tempS);
 		}

@@ -6,6 +6,7 @@ CMakeFiles/MagicPlus.dir/main.cpp.o
  ../include/Arithmetic.hpp
  ../include/CmdAnaly.hpp
  ../include/DataBase.hpp
+ ../include/Formula.hpp
  ../include/Loop.hpp
  ../include/OpString.hpp
  /home/fancy/文档/cpp_project/Magic+/main.cpp

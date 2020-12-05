@@ -6,5 +6,6 @@ src/CMakeFiles/admin.dir/Admin.cpp.o
  ../include/Arithmetic.hpp
  ../include/CmdAnaly.hpp
  ../include/DataBase.hpp
+ ../include/Formula.hpp
  ../include/OpString.hpp
  /home/fancy/文档/cpp_project/Magic+/src/Admin.cpp
