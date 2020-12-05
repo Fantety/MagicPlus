@@ -15,9 +15,15 @@ A powerful terminal calculator, through terminal instructions to complete a vari
 
 ### Instructions
 
-#### 1.Execute fcal -p [four arithmetic operations]
-##### such as "fcal -p 1+2+3+4"
-##### use -s can save the arithmetic in the database
+#### 1./p [Enter the primary mode]
+> Enter a basic formula such as 1*1+1
+#### 2./ps [Enter the primary mode and save mode]
+> Enter a basic formula
+#### 3./d [Enter the database mode]
+> Enter all to show all history
+> Enter fall to delete all history
+
+
 
 ### Participation contribution
 
