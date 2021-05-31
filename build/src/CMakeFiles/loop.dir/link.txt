@@ -1,2 +1,0 @@
-/bin/ar qc ../../lib/libloop.a  CMakeFiles/loop.dir/Loop.cpp.o
-/bin/ranlib ../../lib/libloop.a

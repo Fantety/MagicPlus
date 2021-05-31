@@ -1,2 +1,0 @@
-/bin/ar qc ../../lib/libcmdanaly.a  CMakeFiles/cmdanaly.dir/CmdAnaly.cpp.o
-/bin/ranlib ../../lib/libcmdanaly.a

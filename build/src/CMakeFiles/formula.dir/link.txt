@@ -1,2 +1,0 @@
-/bin/ar qc ../../lib/libformula.a  CMakeFiles/formula.dir/Formula.cpp.o
-/bin/ranlib ../../lib/libformula.a

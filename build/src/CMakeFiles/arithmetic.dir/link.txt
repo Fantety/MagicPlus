@@ -1,2 +1,0 @@
-/bin/ar qc ../../lib/libarithmetic.a  CMakeFiles/arithmetic.dir/Arithmetic.cpp.o
-/bin/ranlib ../../lib/libarithmetic.a

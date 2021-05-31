@@ -1,2 +1,0 @@
-/bin/ar qc ../../lib/libopstring.a  CMakeFiles/opstring.dir/OpString.cpp.o
-/bin/ranlib ../../lib/libopstring.a
